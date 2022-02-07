@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D18C63D27A6A646002E58A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C63C27A6A646002E58A4 /* AppDelegate.swift */; };
+		3D18C63F27A6A646002E58A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */; };
+		3D18C64127A6A646002E58A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C64027A6A646002E58A4 /* ViewController.swift */; };
+		3D18C64427A6A646002E58A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64227A6A646002E58A4 /* Main.storyboard */; };
+		3D18C64627A6A647002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64527A6A647002E58A4 /* Assets.xcassets */; };
+		3D18C64927A6A647002E58A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64727A6A647002E58A4 /* LaunchScreen.storyboard */; };
+		3D18C65427A6A647002E58A4 /* TNYWatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C65327A6A647002E58A4 /* TNYWatchAppTests.swift */; };
+		3D18C65F27A6A647002E58A4 /* TNYWatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C65E27A6A647002E58A4 /* TNYWatchAppUITests.swift */; };
+		3D18C66427A6A647002E58A4 /* TNYWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3D18C66327A6A647002E58A4 /* TNYWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D18C66A27A6A647002E58A4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C66827A6A647002E58A4 /* Interface.storyboard */; };
+		3D18C66C27A6A647002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C66B27A6A647002E58A4 /* Assets.xcassets */; };
+		3D18C67327A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D18C67A27A6A647002E58A4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */; };
+		3D18C67C27A6A647002E58A4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67B27A6A647002E58A4 /* NotificationController.swift */; };
+		3D18C67E27A6A648002E58A4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67D27A6A648002E58A4 /* ComplicationController.swift */; };
+		3D18C68027A6A648002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C67F27A6A648002E58A4 /* Assets.xcassets */; };
+		892A8D4427AC610400F67C09 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */; };
+		8975289E27A86A0C00EE66DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67727A6A647002E58A4 /* InterfaceController.swift */; };
+		897528F027A9C22300EE66DB /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897528EF27A9C22300EE66DB /* AudioListViewController.swift */; };
+		8975290C27A9C79300EE66DB /* TableRowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897528FB27A9C36700EE66DB /* TableRowObject.swift */; };
+		8975291327AA31FB00EE66DB /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */; };
+		89752B1127AAB5D900EE66DB /* PodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B1027AAB5D900EE66DB /* PodcastMapper.swift */; };
+		89752B2427AABBED00EE66DB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B2327AABBED00EE66DB /* Article.swift */; };
+		89752B2F27AAC93100EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
+		89752B3A27AAC93600EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
+		89752B4027AAC93900EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D18C65027A6A647002E58A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D18C63127A6A646002E58A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D18C63827A6A646002E58A4;
+			remoteInfo = TNYWatchApp;
+		};
+		3D18C65B27A6A647002E58A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D18C63127A6A646002E58A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D18C63827A6A646002E58A4;
+			remoteInfo = TNYWatchApp;
+		};
+		3D18C66527A6A647002E58A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D18C63127A6A646002E58A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D18C66227A6A647002E58A4;
+			remoteInfo = "TNYWatchApp WatchKit App";
+		};
+		3D18C67427A6A647002E58A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D18C63127A6A646002E58A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D18C67127A6A647002E58A4;
+			remoteInfo = "TNYWatchApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D18C68827A6A648002E58A4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D18C67327A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C68C27A6A648002E58A4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3D18C66427A6A647002E58A4 /* TNYWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D18C63927A6A646002E58A4 /* TNYWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNYWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D18C63C27A6A646002E58A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D18C64027A6A646002E58A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D18C64327A6A646002E58A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D18C64527A6A647002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D18C64827A6A647002E58A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D18C64A27A6A647002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D18C64F27A6A647002E58A4 /* TNYWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNYWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D18C65327A6A647002E58A4 /* TNYWatchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNYWatchAppTests.swift; sourceTree = "<group>"; };
+		3D18C65527A6A647002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D18C65A27A6A647002E58A4 /* TNYWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNYWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D18C65E27A6A647002E58A4 /* TNYWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNYWatchAppUITests.swift; sourceTree = "<group>"; };
+		3D18C66027A6A647002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D18C66327A6A647002E58A4 /* TNYWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TNYWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D18C66927A6A647002E58A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3D18C66B27A6A647002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D18C66D27A6A647002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TNYWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D18C67727A6A647002E58A4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3D18C67B27A6A647002E58A4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3D18C67D27A6A648002E58A4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3D18C67F27A6A648002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D18C68127A6A648002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D18C68227A6A648002E58A4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		897528EF27A9C22300EE66DB /* AudioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewController.swift; sourceTree = "<group>"; };
+		897528FB27A9C36700EE66DB /* TableRowObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowObject.swift; sourceTree = "<group>"; };
+		8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
+		89752B1027AAB5D900EE66DB /* PodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastMapper.swift; sourceTree = "<group>"; };
+		89752B1C27AABAE800EE66DB /* Article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Article.json; sourceTree = "<group>"; };
+		89752B2327AABBED00EE66DB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D18C63627A6A646002E58A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C64C27A6A647002E58A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C65727A6A647002E58A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C66F27A6A647002E58A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D18C63027A6A646002E58A4 = {
+			isa = PBXGroup;
+			children = (
+				3D18C63B27A6A646002E58A4 /* TNYWatchApp */,
+				3D18C65227A6A647002E58A4 /* TNYWatchAppTests */,
+				3D18C65D27A6A647002E58A4 /* TNYWatchAppUITests */,
+				3D18C66727A6A647002E58A4 /* TNYWatchApp WatchKit App */,
+				3D18C67627A6A647002E58A4 /* TNYWatchApp WatchKit Extension */,
+				3D18C63A27A6A646002E58A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D18C63A27A6A646002E58A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D18C63927A6A646002E58A4 /* TNYWatchApp.app */,
+				3D18C64F27A6A647002E58A4 /* TNYWatchAppTests.xctest */,
+				3D18C65A27A6A647002E58A4 /* TNYWatchAppUITests.xctest */,
+				3D18C66327A6A647002E58A4 /* TNYWatchApp WatchKit App.app */,
+				3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D18C63B27A6A646002E58A4 /* TNYWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				3D18C63C27A6A646002E58A4 /* AppDelegate.swift */,
+				3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */,
+				3D18C64027A6A646002E58A4 /* ViewController.swift */,
+				3D18C64227A6A646002E58A4 /* Main.storyboard */,
+				3D18C64527A6A647002E58A4 /* Assets.xcassets */,
+				3D18C64727A6A647002E58A4 /* LaunchScreen.storyboard */,
+				3D18C64A27A6A647002E58A4 /* Info.plist */,
+			);
+			path = TNYWatchApp;
+			sourceTree = "<group>";
+		};
+		3D18C65227A6A647002E58A4 /* TNYWatchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D18C65327A6A647002E58A4 /* TNYWatchAppTests.swift */,
+				3D18C65527A6A647002E58A4 /* Info.plist */,
+			);
+			path = TNYWatchAppTests;
+			sourceTree = "<group>";
+		};
+		3D18C65D27A6A647002E58A4 /* TNYWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D18C65E27A6A647002E58A4 /* TNYWatchAppUITests.swift */,
+				3D18C66027A6A647002E58A4 /* Info.plist */,
+			);
+			path = TNYWatchAppUITests;
+			sourceTree = "<group>";
+		};
+		3D18C66727A6A647002E58A4 /* TNYWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3D18C66827A6A647002E58A4 /* Interface.storyboard */,
+				897528FB27A9C36700EE66DB /* TableRowObject.swift */,
+				3D18C66B27A6A647002E58A4 /* Assets.xcassets */,
+				89752B1C27AABAE800EE66DB /* Article.json */,
+				89752B2327AABBED00EE66DB /* Article.swift */,
+				3D18C66D27A6A647002E58A4 /* Info.plist */,
+			);
+			path = "TNYWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		3D18C67627A6A647002E58A4 /* TNYWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */,
+				897528EF27A9C22300EE66DB /* AudioListViewController.swift */,
+				8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */,
+				3D18C67727A6A647002E58A4 /* InterfaceController.swift */,
+				3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */,
+				3D18C67B27A6A647002E58A4 /* NotificationController.swift */,
+				3D18C67D27A6A648002E58A4 /* ComplicationController.swift */,
+				3D18C67F27A6A648002E58A4 /* Assets.xcassets */,
+				3D18C68127A6A648002E58A4 /* Info.plist */,
+				3D18C68227A6A648002E58A4 /* PushNotificationPayload.apns */,
+				89752B1027AAB5D900EE66DB /* PodcastMapper.swift */,
+			);
+			path = "TNYWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D18C63827A6A646002E58A4 /* TNYWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D18C68D27A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp" */;
+			buildPhases = (
+				3D18C63527A6A646002E58A4 /* Sources */,
+				3D18C63627A6A646002E58A4 /* Frameworks */,
+				3D18C63727A6A646002E58A4 /* Resources */,
+				3D18C68C27A6A648002E58A4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D18C66627A6A647002E58A4 /* PBXTargetDependency */,
+			);
+			name = TNYWatchApp;
+			productName = TNYWatchApp;
+			productReference = 3D18C63927A6A646002E58A4 /* TNYWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D18C64E27A6A647002E58A4 /* TNYWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D18C69027A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchAppTests" */;
+			buildPhases = (
+				3D18C64B27A6A647002E58A4 /* Sources */,
+				3D18C64C27A6A647002E58A4 /* Frameworks */,
+				3D18C64D27A6A647002E58A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D18C65127A6A647002E58A4 /* PBXTargetDependency */,
+			);
+			name = TNYWatchAppTests;
+			productName = TNYWatchAppTests;
+			productReference = 3D18C64F27A6A647002E58A4 /* TNYWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D18C65927A6A647002E58A4 /* TNYWatchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D18C69327A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchAppUITests" */;
+			buildPhases = (
+				3D18C65627A6A647002E58A4 /* Sources */,
+				3D18C65727A6A647002E58A4 /* Frameworks */,
+				3D18C65827A6A647002E58A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D18C65C27A6A647002E58A4 /* PBXTargetDependency */,
+			);
+			name = TNYWatchAppUITests;
+			productName = TNYWatchAppUITests;
+			productReference = 3D18C65A27A6A647002E58A4 /* TNYWatchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3D18C66227A6A647002E58A4 /* TNYWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D18C68927A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp WatchKit App" */;
+			buildPhases = (
+				3D18C66127A6A647002E58A4 /* Resources */,
+				3D18C68827A6A648002E58A4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D18C67527A6A647002E58A4 /* PBXTargetDependency */,
+			);
+			name = "TNYWatchApp WatchKit App";
+			productName = "TNYWatchApp WatchKit App";
+			productReference = 3D18C66327A6A647002E58A4 /* TNYWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3D18C67127A6A647002E58A4 /* TNYWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D18C68527A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp WatchKit Extension" */;
+			buildPhases = (
+				3D18C66E27A6A647002E58A4 /* Sources */,
+				3D18C66F27A6A647002E58A4 /* Frameworks */,
+				3D18C67027A6A647002E58A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TNYWatchApp WatchKit Extension";
+			productName = "TNYWatchApp WatchKit Extension";
+			productReference = 3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D18C63127A6A646002E58A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3D18C63827A6A646002E58A4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3D18C64E27A6A647002E58A4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3D18C63827A6A646002E58A4;
+					};
+					3D18C65927A6A647002E58A4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3D18C63827A6A646002E58A4;
+					};
+					3D18C66227A6A647002E58A4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3D18C67127A6A647002E58A4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3D18C63427A6A646002E58A4 /* Build configuration list for PBXProject "TNYWatchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D18C63027A6A646002E58A4;
+			productRefGroup = 3D18C63A27A6A646002E58A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D18C63827A6A646002E58A4 /* TNYWatchApp */,
+				3D18C64E27A6A647002E58A4 /* TNYWatchAppTests */,
+				3D18C65927A6A647002E58A4 /* TNYWatchAppUITests */,
+				3D18C66227A6A647002E58A4 /* TNYWatchApp WatchKit App */,
+				3D18C67127A6A647002E58A4 /* TNYWatchApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D18C63727A6A646002E58A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89752B4027AAC93900EE66DB /* Article.json in Resources */,
+				3D18C64927A6A647002E58A4 /* LaunchScreen.storyboard in Resources */,
+				3D18C64627A6A647002E58A4 /* Assets.xcassets in Resources */,
+				3D18C64427A6A646002E58A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C64D27A6A647002E58A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C65827A6A647002E58A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C66127A6A647002E58A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D18C66C27A6A647002E58A4 /* Assets.xcassets in Resources */,
+				3D18C66A27A6A647002E58A4 /* Interface.storyboard in Resources */,
+				89752B3A27AAC93600EE66DB /* Article.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C67027A6A647002E58A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89752B2F27AAC93100EE66DB /* Article.json in Resources */,
+				3D18C68027A6A648002E58A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D18C63527A6A646002E58A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D18C64127A6A646002E58A4 /* ViewController.swift in Sources */,
+				3D18C63D27A6A646002E58A4 /* AppDelegate.swift in Sources */,
+				3D18C63F27A6A646002E58A4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C64B27A6A647002E58A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D18C65427A6A647002E58A4 /* TNYWatchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C65627A6A647002E58A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D18C65F27A6A647002E58A4 /* TNYWatchAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D18C66E27A6A647002E58A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89752B2427AABBED00EE66DB /* Article.swift in Sources */,
+				3D18C67C27A6A647002E58A4 /* NotificationController.swift in Sources */,
+				8975289E27A86A0C00EE66DB /* InterfaceController.swift in Sources */,
+				897528F027A9C22300EE66DB /* AudioListViewController.swift in Sources */,
+				3D18C67E27A6A648002E58A4 /* ComplicationController.swift in Sources */,
+				8975290C27A9C79300EE66DB /* TableRowObject.swift in Sources */,
+				3D18C67A27A6A647002E58A4 /* ExtensionDelegate.swift in Sources */,
+				8975291327AA31FB00EE66DB /* PlayAudioViewController.swift in Sources */,
+				892A8D4427AC610400F67C09 /* SplashScreenViewController.swift in Sources */,
+				89752B1127AAB5D900EE66DB /* PodcastMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D18C65127A6A647002E58A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D18C63827A6A646002E58A4 /* TNYWatchApp */;
+			targetProxy = 3D18C65027A6A647002E58A4 /* PBXContainerItemProxy */;
+		};
+		3D18C65C27A6A647002E58A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D18C63827A6A646002E58A4 /* TNYWatchApp */;
+			targetProxy = 3D18C65B27A6A647002E58A4 /* PBXContainerItemProxy */;
+		};
+		3D18C66627A6A647002E58A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D18C66227A6A647002E58A4 /* TNYWatchApp WatchKit App */;
+			targetProxy = 3D18C66527A6A647002E58A4 /* PBXContainerItemProxy */;
+		};
+		3D18C67527A6A647002E58A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D18C67127A6A647002E58A4 /* TNYWatchApp WatchKit Extension */;
+			targetProxy = 3D18C67427A6A647002E58A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D18C64227A6A646002E58A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D18C64327A6A646002E58A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D18C64727A6A647002E58A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D18C64827A6A647002E58A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D18C66827A6A647002E58A4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D18C66927A6A647002E58A4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D18C68327A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D18C68427A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3D18C68627A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = "TNYWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		3D18C68727A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = "TNYWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		3D18C68A27A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				IBSC_MODULE = TNYWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TNYWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		3D18C68B27A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				IBSC_MODULE = TNYWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TNYWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		3D18C68E27A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D18C68F27A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D18C69127A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNYWatchApp.app/TNYWatchApp";
+			};
+			name = Debug;
+		};
+		3D18C69227A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNYWatchApp.app/TNYWatchApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D18C69427A6A648002E58A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TNYWatchApp;
+			};
+			name = Debug;
+		};
+		3D18C69527A6A648002E58A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAV5A3CB56;
+				INFOPLIST_FILE = TNYWatchAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.condenast.TNYWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TNYWatchApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D18C63427A6A646002E58A4 /* Build configuration list for PBXProject "TNYWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C68327A6A648002E58A4 /* Debug */,
+				3D18C68427A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D18C68527A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C68627A6A648002E58A4 /* Debug */,
+				3D18C68727A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D18C68927A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C68A27A6A648002E58A4 /* Debug */,
+				3D18C68B27A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D18C68D27A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C68E27A6A648002E58A4 /* Debug */,
+				3D18C68F27A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D18C69027A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C69127A6A648002E58A4 /* Debug */,
+				3D18C69227A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D18C69327A6A648002E58A4 /* Build configuration list for PBXNativeTarget "TNYWatchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18C69427A6A648002E58A4 /* Debug */,
+				3D18C69527A6A648002E58A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D18C63127A6A646002E58A4 /* Project object */;
+}

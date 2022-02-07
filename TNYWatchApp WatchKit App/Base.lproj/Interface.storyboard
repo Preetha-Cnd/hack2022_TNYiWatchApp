@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jlh-jo-jMi">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="G10-jQ-QkX">
+            <objects>
+                <controller id="bJE-js-gTA" customClass="SplashScreenViewController" customModule="TNYWatchApp_WatchKit_Extension">
+                    <items>
+                        <imageView width="100" alignment="center" verticalAlignment="center" image="Stacked" id="Az2-uX-zGb"/>
+                    </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-638" y="345"/>
+        </scene>
+        <!--AudioListView-->
+        <scene sceneID="UwK-Qy-5kJ">
+            <objects>
+                <controller identifier="AudioListView" backgroundImage="tny-transparent" contentMode="scaleAspectFit" id="jlh-jo-jMi" customClass="AudioListViewController" customModule="TNYWatchApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="jtB-3J-T6E">
+                            <items>
+                                <separator alignment="left" id="3qr-FG-dA2">
+                                    <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </separator>
+                                <label width="1" alignment="left" verticalAlignment="bottom" text="Podcasts" textAlignment="center" id="6xF-Zx-Vmp">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" pagingScroll="YES" id="DNt-6P-ZEt">
+                            <items>
+                                <tableRow identifier="Cell" id="SPa-hj-xaJ" customClass="TableRowObject" customModule="TNYWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Xj1-ux-hje">
+                                        <items>
+                                            <group width="1" alignment="left" id="Ba8-4z-o4j">
+                                                <items>
+                                                    <group width="1" alignment="left" id="drN-fz-BID">
+                                                        <items>
+                                                            <label width="99" alignment="left" text="Label" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="5Hp-TU-Ocv">
+                                                                <color key="textColor" white="0.20455545774647887" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="system" weight="light" pointSize="14"/>
+                                                            </label>
+                                                            <imageView width="15" height="15" alignment="right" verticalAlignment="center" image="right-arrow" id="Gpx-6v-7to">
+                                                                <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </group>
+                                            <separator height="1" alignment="center" verticalAlignment="bottom" id="E1s-9p-Xrf">
+                                                <color key="color" white="0.88891945422535212" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </separator>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="listLabel" destination="5Hp-TU-Ocv" id="mNZ-uE-uIz"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.97208121827411165" green="0.97208121827411165" blue="0.97208121827411165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="tableView" destination="DNt-6P-ZEt" id="OyU-uf-dWl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-214" y="345"/>
+        </scene>
+        <!--PlayAudioView-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="PlayAudioView" id="AgC-eL-Hgc" customClass="PlayAudioViewController" customModule="TNYWatchApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" id="stJ-sq-8Hi">
+                            <items>
+                                <button width="30" height="30" alignment="left" backgroundImage="previousTrack" id="vvp-gJ-k1d">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="previousTrackAction" destination="AgC-eL-Hgc" id="kfU-8Q-YHR"/>
+                                    </connections>
+                                </button>
+                                <button width="30" height="30" alignment="center" verticalAlignment="center" backgroundImage="play" id="MBx-N7-Y6w">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="playTrackAction" destination="AgC-eL-Hgc" id="NNR-4o-0Vk"/>
+                                    </connections>
+                                </button>
+                                <button width="30" height="30" alignment="right" verticalAlignment="center" backgroundImage="nextTrack" id="oKu-VR-jiU">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="nextTrackAction" destination="AgC-eL-Hgc" id="KZn-Ip-Vdr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.82645939086294418" green="0.82645939086294418" blue="0.82645939086294418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
+                        <label alignment="left" text="Now playing:" id="aEy-kg-IVZ">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="Audio" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="7wM-1w-nPc">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="audioName" destination="7wM-1w-nPc" id="CZv-9K-H2l"/>
+                        <outlet property="nextTrackButton" destination="oKu-VR-jiU" id="eYM-AW-Kod"/>
+                        <outlet property="playTrackButton" destination="MBx-N7-Y6w" id="Dpu-Ge-XeM"/>
+                        <outlet property="previousTrackButton" destination="vvp-gJ-k1d" id="9uB-Ce-5A7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="76" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TNYWatchApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="TNYWatchApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Stacked" width="225" height="53"/>
+        <image name="nextTrack" width="16" height="16"/>
+        <image name="play" width="32" height="32"/>
+        <image name="previousTrack" width="16" height="16"/>
+        <image name="right-arrow" width="16" height="16"/>
+        <image name="tny-transparent" width="200" height="200"/>
+    </resources>
+</document>

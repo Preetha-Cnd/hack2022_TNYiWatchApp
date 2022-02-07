@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Reopening Schools",
+        "url": "http://api.audm.com/v5/new-yorker-audio-url-mp3?publisher-slug=newyorker&article-id=601c61a5b18004aa38d58f98"
+    },
+    {
+        "name": "Among the Insurrectionists",
+        "url": "https://api.audm.com/v5/new-yorker-audio-url-mp3?publisher-slug=newyorker&article-id=601972ae3eaff70e01d1e643"
+    },{
+        "name": "The Believer",
+        "url": "https://api.audm.com/v5/new-yorker-audio-url-mp3?publisher-slug=newyorker&article-id=601972a3be123fdd23533251"
+    },{
+        "name": "Dream Lover",
+        "url": "https://api.audm.com/v5/new-yorker-audio-url-mp3?publisher-slug=newyorker&article-id=601972db9cfa59d565423867"
+    },{
+        "name": "Bruno Schulz",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/tnyfiction/tnyfiction020122_zambra.mp3"
+    },{
+        "name": "Russia’s Intentions",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/tnyradiohour/tnyradiohour012822_webhour.mp3"
+    },{
+        "name": "Tracy K. Smith",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/tnypoetry/tnypoetry122221_gorman.mp3"
+    }
+]
