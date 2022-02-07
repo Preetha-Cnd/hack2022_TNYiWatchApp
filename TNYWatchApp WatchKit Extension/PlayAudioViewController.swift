@@ -14,6 +14,7 @@ class PlayAudioViewController: WKInterfaceController {
     @IBOutlet var nextTrackButton: WKInterfaceButton!
     @IBOutlet var playTrackButton: WKInterfaceButton!
     @IBOutlet var audioName: WKInterfaceLabel!
+    @IBOutlet weak var progressBar: WKInterfaceImage!
     
     var audioPlayer : AVPlayer!
     let audioSession = AVAudioSession.sharedInstance()
@@ -27,15 +28,19 @@ class PlayAudioViewController: WKInterfaceController {
         
         // Configure interface object
         articleSelectedRowIndex = context as? Int ?? 0
+        self.progressBar.setRelativeWidth(0.0, withAdjustment: 0)
     }
     
     override func willActivate() {
         super.willActivate()
         setupAudio(with: articleItems[articleSelectedRowIndex].url)
+        
+        setTitle("Now Playing")
     }
     
-    override func didDeactivate() {
-        super.didDeactivate()
+    override func willDisappear() {
+        super.willDisappear()
+        audioPlayer?.pause()
     }
     
     func setupAudio(with urlString: String) {
@@ -45,13 +50,26 @@ class PlayAudioViewController: WKInterfaceController {
             return
         }
         do {
-            try audioSession.setCategory(AVAudioSession.Category.playback)
+            try audioSession.setCategory(.playback,
+                                         mode: .default,
+                                         policy: .longFormAudio,
+                                         options: [])
             try audioSession.setActive(true)
 
             audioPlayer = AVPlayer(url: url as URL)
             playTrackButton.setBackgroundImageNamed("pause")
             audioName.setText("\(articleItems[articleSelectedRowIndex].name)")
             audioPlayer.play()
+                        
+            audioPlayer.addPeriodicTimeObserver(forInterval: CMTimeMake(value: 1, timescale: 30), queue: .main) { time in
+
+                if let duration = self.audioPlayer.currentItem?.duration {
+                    
+                    let fraction = CMTimeGetSeconds(time) / CMTimeGetSeconds(duration)
+                    self.progressBar.setRelativeWidth(CGFloat(fraction), withAdjustment: 0)
+                }
+            }
+            
         } catch {
             print("audio file error")
         }
@@ -84,6 +102,6 @@ class PlayAudioViewController: WKInterfaceController {
             audioPlayer.play()
             playTrackButton.setBackgroundImageNamed("pause")
         }
-    isPlaying = !isPlaying
+        isPlaying = !isPlaying
     }
 }

@@ -22,6 +22,7 @@ class AudioListViewController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
+        setTitle("Podcasts")
     }
     
     override func didDeactivate() {
@@ -41,7 +42,6 @@ class AudioListViewController: WKInterfaceController {
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         pushController(withName: "PlayAudioView", context: rowIndex)
     }
-    
 }
 
 

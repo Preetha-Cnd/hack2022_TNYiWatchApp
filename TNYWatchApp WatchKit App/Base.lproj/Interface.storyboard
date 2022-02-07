@@ -28,9 +28,6 @@
                                 <separator alignment="left" id="3qr-FG-dA2">
                                     <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </separator>
-                                <label width="1" alignment="left" verticalAlignment="bottom" text="Podcasts" textAlignment="center" id="6xF-Zx-Vmp">
-                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </label>
                             </items>
                         </group>
                         <table alignment="left" pagingScroll="YES" id="DNt-6P-ZEt">
@@ -83,7 +80,10 @@
             <objects>
                 <controller identifier="PlayAudioView" id="AgC-eL-Hgc" customClass="PlayAudioViewController" customModule="TNYWatchApp_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" verticalAlignment="center" id="stJ-sq-8Hi">
+                        <group width="1" height="40" alignment="left" id="eF4-TS-oJm">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <group width="1" alignment="left" id="stJ-sq-8Hi">
                             <items>
                                 <button width="30" height="30" alignment="left" backgroundImage="previousTrack" id="vvp-gJ-k1d">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,22 +107,32 @@
                                     </connections>
                                 </button>
                             </items>
-                            <color key="backgroundColor" red="0.82645939086294418" green="0.82645939086294418" blue="0.82645939086294418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="margins" left="3" right="3" top="0.0" bottom="0.0"/>
                         </group>
-                        <label alignment="left" text="Now playing:" id="aEy-kg-IVZ">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
-                        </label>
+                        <group width="1" height="7" alignment="left" verticalAlignment="bottom" radius="0.0" spacing="15" id="ds4-6J-5jm">
+                            <items>
+                                <imageView width="10" height="10" alignment="left" image="rect" id="2lQ-8l-3vo">
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="20" alignment="left" verticalAlignment="bottom" id="Jf2-PX-oOn">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
                         <label alignment="center" verticalAlignment="center" text="Audio" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="7wM-1w-nPc">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
                     </items>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.90187180644333964" green="0.90187180644333964" blue="0.90187180644333964" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
                         <outlet property="audioName" destination="7wM-1w-nPc" id="CZv-9K-H2l"/>
                         <outlet property="nextTrackButton" destination="oKu-VR-jiU" id="eYM-AW-Kod"/>
                         <outlet property="playTrackButton" destination="MBx-N7-Y6w" id="Dpu-Ge-XeM"/>
                         <outlet property="previousTrackButton" destination="vvp-gJ-k1d" id="9uB-Ce-5A7"/>
+                        <outlet property="progressBar" destination="2lQ-8l-3vo" id="tlq-QQ-yid"/>
                     </connections>
                 </controller>
             </objects>
@@ -165,6 +175,7 @@
         <image name="nextTrack" width="16" height="16"/>
         <image name="play" width="32" height="32"/>
         <image name="previousTrack" width="16" height="16"/>
+        <image name="rect" width="186" height="144"/>
         <image name="right-arrow" width="16" height="16"/>
         <image name="tny-transparent" width="200" height="200"/>
     </resources>
