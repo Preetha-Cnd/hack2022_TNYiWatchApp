@@ -1,4 +1,4 @@
-import WatchKit
+import Foundation
 
 class Article: NSObject {
     
@@ -32,10 +32,4 @@ class Article: NSObject {
         self.url = url
         self.pausedDuration = pausedDuration
     }
-    
-//    convenience init(dictionary: [String: String]) {
-//        let name = dictionary["name"]!
-//        let url = dictionary["url"]!
-//        self.init(name: name, url: url)
-//    }
 }

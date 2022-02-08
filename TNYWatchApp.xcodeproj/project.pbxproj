@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3D18C63D27A6A646002E58A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C63C27A6A646002E58A4 /* AppDelegate.swift */; };
 		3D18C63F27A6A646002E58A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */; };
-		3D18C64127A6A646002E58A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C64027A6A646002E58A4 /* ViewController.swift */; };
 		3D18C64427A6A646002E58A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64227A6A646002E58A4 /* Main.storyboard */; };
 		3D18C64627A6A647002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64527A6A647002E58A4 /* Assets.xcassets */; };
 		3D18C64927A6A647002E58A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C64727A6A647002E58A4 /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 		3DA78F2727B248580046611F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA78F2627B248580046611F /* IntentHandler.swift */; };
 		3DA78F2B27B248580046611F /* PodcastIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DA78F2127B248580046611F /* PodcastIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DA78F6B27B251DE0046611F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA78F2627B248580046611F /* IntentHandler.swift */; };
-		3DA78F7227B252610046611F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C64027A6A646002E58A4 /* ViewController.swift */; };
 		3DA78FAD27B27EEE0046611F /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA78FAC27B27EEE0046611F /* MusicPlayer.swift */; };
 		3DA78FAE27B27EEE0046611F /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA78FAC27B27EEE0046611F /* MusicPlayer.swift */; };
 		3DA7913227B2AB790046611F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7913127B2AB790046611F /* Intents.intentdefinition */; };
@@ -39,7 +37,10 @@
 		89752B2427AABBED00EE66DB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B2327AABBED00EE66DB /* Article.swift */; };
 		89752B2F27AAC93100EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
 		89752B3A27AAC93600EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
-		89752B4027AAC93900EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
+		89F9A31327B2B59D001C12E1 /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9A31227B2B59D001C12E1 /* AudioTableViewCell.swift */; };
+		89F9A31527B2BB33001C12E1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B2327AABBED00EE66DB /* Article.swift */; };
+		89F9A31627B2BBCC001C12E1 /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
+		89F9A31A27B2BD52001C12E1 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9A31927B2BD52001C12E1 /* AudioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +121,6 @@
 		3D18C63927A6A646002E58A4 /* TNYWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNYWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D18C63C27A6A646002E58A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D18C64027A6A646002E58A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D18C64327A6A646002E58A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D18C64527A6A647002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D18C64827A6A647002E58A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,6 +152,8 @@
 		8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
 		89752B1C27AABAE800EE66DB /* Article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Article.json; sourceTree = "<group>"; };
 		89752B2327AABBED00EE66DB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		89F9A31227B2B59D001C12E1 /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
+		89F9A31927B2BD52001C12E1 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,11 +229,12 @@
 				3DA78FAC27B27EEE0046611F /* MusicPlayer.swift */,
 				3D18C63C27A6A646002E58A4 /* AppDelegate.swift */,
 				3D18C63E27A6A646002E58A4 /* SceneDelegate.swift */,
-				3D18C64027A6A646002E58A4 /* ViewController.swift */,
+				89F9A31227B2B59D001C12E1 /* AudioTableViewCell.swift */,
 				3D18C64227A6A646002E58A4 /* Main.storyboard */,
 				3D18C64527A6A647002E58A4 /* Assets.xcassets */,
 				3D18C64727A6A647002E58A4 /* LaunchScreen.storyboard */,
 				3D18C64A27A6A647002E58A4 /* Info.plist */,
+				89F9A31927B2BD52001C12E1 /* AudioViewController.swift */,
 			);
 			path = TNYWatchApp;
 			sourceTree = "<group>";
@@ -469,7 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89752B4027AAC93900EE66DB /* Article.json in Resources */,
+				89F9A31627B2BBCC001C12E1 /* Article.json in Resources */,
 				3D18C64927A6A647002E58A4 /* LaunchScreen.storyboard in Resources */,
 				3D18C64627A6A647002E58A4 /* Assets.xcassets in Resources */,
 				3D18C64427A6A646002E58A4 /* Main.storyboard in Resources */,
@@ -524,10 +527,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA7914D27B2AC000046611F /* Intents.intentdefinition in Sources */,
-				3D18C64127A6A646002E58A4 /* ViewController.swift in Sources */,
+				89F9A31527B2BB33001C12E1 /* Article.swift in Sources */,
 				3D18C63D27A6A646002E58A4 /* AppDelegate.swift in Sources */,
 				3DA78F6B27B251DE0046611F /* IntentHandler.swift in Sources */,
 				3DA78FAD27B27EEE0046611F /* MusicPlayer.swift in Sources */,
+				89F9A31A27B2BD52001C12E1 /* AudioViewController.swift in Sources */,
+				89F9A31327B2B59D001C12E1 /* AudioTableViewCell.swift in Sources */,
 				3DA7916927B2ACA90046611F /* PlayPodcastIntentHandler.swift in Sources */,
 				3D18C63F27A6A646002E58A4 /* SceneDelegate.swift in Sources */,
 			);
@@ -566,7 +571,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA78F7227B252610046611F /* ViewController.swift in Sources */,
 				3DA78F2727B248580046611F /* IntentHandler.swift in Sources */,
 				3DA7913227B2AB790046611F /* Intents.intentdefinition in Sources */,
 				3DA7916227B2AC8D0046611F /* PlayPodcastIntentHandler.swift in Sources */,
