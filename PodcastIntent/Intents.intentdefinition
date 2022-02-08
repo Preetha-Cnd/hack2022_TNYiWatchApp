@@ -23,9 +23,11 @@
 			<true/>
 			<key>INIntentDescriptionID</key>
 			<string>mK9jaB</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>1</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
-				<key></key>
+				<key>title</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
@@ -52,7 +54,87 @@
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>sVkLMv</string>
 				</dict>
+				<key>title</key>
+				<dict>
+					<key>INIntentParameterCombinationIsLinked</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Play Podcast</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>QFuaO5</string>
+				</dict>
 			</dict>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Title</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>8Z9XPx</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Sentences</string>
+						<key>INIntentParameterMetadataDefaultValueID</key>
+						<string>MHaPQv</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>title</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Title of podcast</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>dtQMz0</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Please mention title for podcast</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>6IveC1</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>There are ${count} options matching ‘${title}’.</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>0XQsw1</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>DisambiguationIntroduction</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Just to confirm, you wanted ‘${title}’?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>XJA6rJ</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Confirmation</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>1</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+			</array>
 			<key>INIntentResponse</key>
 			<dict>
 				<key>INIntentResponseCodes</key>
