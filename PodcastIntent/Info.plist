@@ -35,6 +35,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>INPlayMediaIntent</string>
 				<string>PlayPodcastIntent</string>
 			</array>
 			<key>SupportedMediaCategories</key>
