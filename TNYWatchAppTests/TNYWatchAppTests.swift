@@ -1,10 +1,3 @@
-//
-//  TNYWatchAppTests.swift
-//  TNYWatchAppTests
-//
-//  Created by S, Preetha on 30/01/22.
-//
-
 import XCTest
 @testable import TNYWatchApp
 

@@ -20,15 +20,10 @@
 		3D18C66C27A6A647002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C66B27A6A647002E58A4 /* Assets.xcassets */; };
 		3D18C67327A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3D18C67A27A6A647002E58A4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */; };
-		3D18C67C27A6A647002E58A4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67B27A6A647002E58A4 /* NotificationController.swift */; };
-		3D18C67E27A6A648002E58A4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67D27A6A648002E58A4 /* ComplicationController.swift */; };
 		3D18C68027A6A648002E58A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18C67F27A6A648002E58A4 /* Assets.xcassets */; };
-		892A8D4427AC610400F67C09 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */; };
-		8975289E27A86A0C00EE66DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18C67727A6A647002E58A4 /* InterfaceController.swift */; };
 		897528F027A9C22300EE66DB /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897528EF27A9C22300EE66DB /* AudioListViewController.swift */; };
 		8975290C27A9C79300EE66DB /* TableRowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897528FB27A9C36700EE66DB /* TableRowObject.swift */; };
 		8975291327AA31FB00EE66DB /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */; };
-		89752B1127AAB5D900EE66DB /* PodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B1027AAB5D900EE66DB /* PodcastMapper.swift */; };
 		89752B2427AABBED00EE66DB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89752B2327AABBED00EE66DB /* Article.swift */; };
 		89752B2F27AAC93100EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
 		89752B3A27AAC93600EE66DB /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 89752B1C27AABAE800EE66DB /* Article.json */; };
@@ -111,18 +106,13 @@
 		3D18C66B27A6A647002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D18C66D27A6A647002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D18C67227A6A647002E58A4 /* TNYWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TNYWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D18C67727A6A647002E58A4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		3D18C67B27A6A647002E58A4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		3D18C67D27A6A648002E58A4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		3D18C67F27A6A648002E58A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D18C68127A6A648002E58A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D18C68227A6A648002E58A4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		897528EF27A9C22300EE66DB /* AudioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewController.swift; sourceTree = "<group>"; };
 		897528FB27A9C36700EE66DB /* TableRowObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowObject.swift; sourceTree = "<group>"; };
 		8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
-		89752B1027AAB5D900EE66DB /* PodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastMapper.swift; sourceTree = "<group>"; };
 		89752B1C27AABAE800EE66DB /* Article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Article.json; sourceTree = "<group>"; };
 		89752B2327AABBED00EE66DB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,17 +221,12 @@
 		3D18C67627A6A647002E58A4 /* TNYWatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				892A8D4327AC610400F67C09 /* SplashScreenViewController.swift */,
 				897528EF27A9C22300EE66DB /* AudioListViewController.swift */,
 				8975291227AA31FB00EE66DB /* PlayAudioViewController.swift */,
-				3D18C67727A6A647002E58A4 /* InterfaceController.swift */,
 				3D18C67927A6A647002E58A4 /* ExtensionDelegate.swift */,
-				3D18C67B27A6A647002E58A4 /* NotificationController.swift */,
-				3D18C67D27A6A648002E58A4 /* ComplicationController.swift */,
 				3D18C67F27A6A648002E58A4 /* Assets.xcassets */,
 				3D18C68127A6A648002E58A4 /* Info.plist */,
 				3D18C68227A6A648002E58A4 /* PushNotificationPayload.apns */,
-				89752B1027AAB5D900EE66DB /* PodcastMapper.swift */,
 			);
 			path = "TNYWatchApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -467,15 +452,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89752B2427AABBED00EE66DB /* Article.swift in Sources */,
-				3D18C67C27A6A647002E58A4 /* NotificationController.swift in Sources */,
-				8975289E27A86A0C00EE66DB /* InterfaceController.swift in Sources */,
 				897528F027A9C22300EE66DB /* AudioListViewController.swift in Sources */,
-				3D18C67E27A6A648002E58A4 /* ComplicationController.swift in Sources */,
 				8975290C27A9C79300EE66DB /* TableRowObject.swift in Sources */,
 				3D18C67A27A6A647002E58A4 /* ExtensionDelegate.swift in Sources */,
 				8975291327AA31FB00EE66DB /* PlayAudioViewController.swift in Sources */,
-				892A8D4427AC610400F67C09 /* SplashScreenViewController.swift in Sources */,
-				89752B1127AAB5D900EE66DB /* PodcastMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,6 @@
 //
 //  TableRowObject.swift
 //  TNYWatchApp
-//
-//  Created by Saini, Priyanka on 02/02/22.
-//
 
 import WatchKit
 

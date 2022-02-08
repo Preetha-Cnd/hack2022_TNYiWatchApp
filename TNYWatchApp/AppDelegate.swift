@@ -1,9 +1,6 @@
 //
 //  AppDelegate.swift
 //  TNYWatchApp
-//
-//  Created by S, Preetha on 30/01/22.
-//
 
 import UIKit
 

@@ -1,9 +1,6 @@
 //
 //  PlayAudioViewController.swift
 //  TNYWatchApp WatchKit Extension
-//
-//  Created by Saini, Priyanka on 02/02/22.
-//
 
 import WatchKit
 import AVFoundation
@@ -41,6 +38,7 @@ class PlayAudioViewController: WKInterfaceController {
     override func willDisappear() {
         super.willDisappear()
         audioPlayer?.pause()
+        setPausedTime()
     }
     
     func setupAudio(with urlString: String) {
@@ -60,6 +58,10 @@ class PlayAudioViewController: WKInterfaceController {
             playTrackButton.setBackgroundImageNamed("pause")
             audioName.setText("\(articleItems[articleSelectedRowIndex].name)")
             audioPlayer.play()
+            
+            if let time = articleItems[articleSelectedRowIndex].pausedDuration {
+                audioPlayer.seek(to: CMTime(seconds: Double(time), preferredTimescale: 1))
+            }
                         
             audioPlayer.addPeriodicTimeObserver(forInterval: CMTimeMake(value: 1, timescale: 30), queue: .main) { time in
 
@@ -75,8 +77,16 @@ class PlayAudioViewController: WKInterfaceController {
         }
     }
     
+    func setPausedTime() {
+        let time = CMTimeGetSeconds((self.audioPlayer.currentItem?.currentTime())!)
+        articleItems[articleSelectedRowIndex].pausedDuration = Float(time)
+    }
+    
     @IBAction func nextTrackAction() {
         audioPlayer.pause()
+        
+        setPausedTime()
+        
         if articleSelectedRowIndex < articleItems.count - 1 {
             playTrackButton.setBackgroundImageNamed("play")
             articleSelectedRowIndex = articleSelectedRowIndex + 1
@@ -86,6 +96,9 @@ class PlayAudioViewController: WKInterfaceController {
     
     @IBAction func previousTrackAction() {
         audioPlayer.pause()
+        
+        setPausedTime()
+        
         if articleSelectedRowIndex != 0 {
             playTrackButton.setBackgroundImageNamed("play")
             articleSelectedRowIndex = articleSelectedRowIndex - 1

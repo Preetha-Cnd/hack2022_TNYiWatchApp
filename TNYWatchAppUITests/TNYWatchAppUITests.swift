@@ -1,10 +1,3 @@
-//
-//  TNYWatchAppUITests.swift
-//  TNYWatchAppUITests
-//
-//  Created by S, Preetha on 30/01/22.
-//
-
 import XCTest
 
 class TNYWatchAppUITests: XCTestCase {
