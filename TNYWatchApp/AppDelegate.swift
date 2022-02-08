@@ -3,11 +3,10 @@
 //  TNYWatchApp
 
 import UIKit
+import Intents
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -27,7 +26,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if userActivity.activityType == "tny.playback-activity-type",
+           let trackName = userActivity.userInfo?["trackName"] as? String,
+           let url = userActivity.userInfo?["previewUrl"] as? URL {
+            MusicPlayer.shared.set(trackName: trackName, url: url)
+            MusicPlayer.shared.play()
 
+            return true
+        }
 
+        return false
+    }
 }
 
