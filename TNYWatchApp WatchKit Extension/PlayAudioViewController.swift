@@ -24,6 +24,7 @@ class PlayAudioViewController: WKInterfaceController {
         
         // Configure interface object
         articleSelectedRowIndex = context as? Int ?? 0
+        disableFirstAndLastAudioTrackButton()
     }
     
     override func willActivate() {
@@ -72,7 +73,6 @@ class PlayAudioViewController: WKInterfaceController {
     
     @IBAction func nextTrackAction() {
         audioPlayer.pause()
-        
         setPausedTime()
         
         if articleSelectedRowIndex < articleItems.count - 1 {
@@ -80,11 +80,11 @@ class PlayAudioViewController: WKInterfaceController {
             articleSelectedRowIndex = articleSelectedRowIndex + 1
             setupAudio(with: articleItems[articleSelectedRowIndex].url)
         }
+        disableFirstAndLastAudioTrackButton()
     }
     
     @IBAction func previousTrackAction() {
         audioPlayer.pause()
-        
         setPausedTime()
         
         if articleSelectedRowIndex != 0 {
@@ -92,10 +92,10 @@ class PlayAudioViewController: WKInterfaceController {
             articleSelectedRowIndex = articleSelectedRowIndex - 1
             setupAudio(with: articleItems[articleSelectedRowIndex].url)
         }
+        disableFirstAndLastAudioTrackButton()
     }
     
     @IBAction func playTrackAction() {
-        
         if isPlaying {
             audioPlayer.pause()
             playTrackButton.setBackgroundImageNamed("play")
@@ -104,5 +104,16 @@ class PlayAudioViewController: WKInterfaceController {
             playTrackButton.setBackgroundImageNamed("pause")
         }
         isPlaying = !isPlaying
+    }
+    
+    func disableFirstAndLastAudioTrackButton() {
+        if articleSelectedRowIndex == 0 {
+            previousTrackButton.setEnabled(false)
+        } else if articleSelectedRowIndex == articleItems.count - 1 {
+            nextTrackButton.setEnabled(false)
+        } else {
+            nextTrackButton.setEnabled(true)
+            previousTrackButton.setEnabled(true)
+        }
     }
 }
