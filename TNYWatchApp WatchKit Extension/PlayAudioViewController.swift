@@ -11,7 +11,6 @@ class PlayAudioViewController: WKInterfaceController {
     @IBOutlet var nextTrackButton: WKInterfaceButton!
     @IBOutlet var playTrackButton: WKInterfaceButton!
     @IBOutlet var audioName: WKInterfaceLabel!
-    @IBOutlet weak var progressBar: WKInterfaceImage!
     
     var audioPlayer : AVPlayer!
     let audioSession = AVAudioSession.sharedInstance()
@@ -25,7 +24,6 @@ class PlayAudioViewController: WKInterfaceController {
         
         // Configure interface object
         articleSelectedRowIndex = context as? Int ?? 0
-        self.progressBar.setRelativeWidth(0.0, withAdjustment: 0)
     }
     
     override func willActivate() {
@@ -62,16 +60,6 @@ class PlayAudioViewController: WKInterfaceController {
             if let time = articleItems[articleSelectedRowIndex].pausedDuration {
                 audioPlayer.seek(to: CMTime(seconds: Double(time), preferredTimescale: 1))
             }
-                        
-            audioPlayer.addPeriodicTimeObserver(forInterval: CMTimeMake(value: 1, timescale: 30), queue: .main) { time in
-
-                if let duration = self.audioPlayer.currentItem?.duration {
-                    
-                    let fraction = CMTimeGetSeconds(time) / CMTimeGetSeconds(duration)
-                    self.progressBar.setRelativeWidth(CGFloat(fraction), withAdjustment: 0)
-                }
-            }
-            
         } catch {
             print("audio file error")
         }

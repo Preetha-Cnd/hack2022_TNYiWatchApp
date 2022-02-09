@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jlh-jo-jMi">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jlh-jo-jMi">
     <device id="watch38"/>
     <dependencies>
-        <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Splash Screen View Controller-->
@@ -81,7 +80,7 @@
             <objects>
                 <controller identifier="PlayAudioView" id="AgC-eL-Hgc" customClass="PlayAudioViewController" customModule="TNYWatchApp_WatchKit_Extension">
                     <items>
-                        <group width="1" height="40" alignment="left" id="eF4-TS-oJm">
+                        <group width="1" height="50" alignment="left" id="eF4-TS-oJm">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </group>
                         <group width="1" alignment="left" id="stJ-sq-8Hi">
@@ -111,18 +110,6 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <edgeInsets key="margins" left="3" right="3" top="0.0" bottom="0.0"/>
                         </group>
-                        <group width="1" height="7" alignment="left" verticalAlignment="bottom" radius="0.0" spacing="15" id="ds4-6J-5jm">
-                            <items>
-                                <imageView width="10" height="10" alignment="left" image="rect" id="2lQ-8l-3vo">
-                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </imageView>
-                            </items>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
-                        </group>
-                        <group width="1" height="20" alignment="left" verticalAlignment="bottom" id="Jf2-PX-oOn">
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </group>
                         <label alignment="center" verticalAlignment="center" text="Audio" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="7wM-1w-nPc">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
@@ -133,7 +120,6 @@
                         <outlet property="nextTrackButton" destination="oKu-VR-jiU" id="eYM-AW-Kod"/>
                         <outlet property="playTrackButton" destination="MBx-N7-Y6w" id="Dpu-Ge-XeM"/>
                         <outlet property="previousTrackButton" destination="vvp-gJ-k1d" id="9uB-Ce-5A7"/>
-                        <outlet property="progressBar" destination="2lQ-8l-3vo" id="tlq-QQ-yid"/>
                     </connections>
                 </controller>
             </objects>
@@ -173,10 +159,9 @@
     </scenes>
     <resources>
         <image name="Stacked" width="225" height="53"/>
-        <image name="nextTrack" width="16" height="16"/>
+        <image name="nextTrack" width="32" height="32"/>
         <image name="play" width="32" height="32"/>
-        <image name="previousTrack" width="16" height="16"/>
-        <image name="rect" width="186" height="144"/>
+        <image name="previousTrack" width="32" height="32"/>
         <image name="right-arrow" width="16" height="16"/>
         <image name="tny-transparent" width="200" height="200"/>
     </resources>
